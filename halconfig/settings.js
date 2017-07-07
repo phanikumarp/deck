@@ -8,10 +8,12 @@ var authEnabled = {%features.auth%};
 var chaosEnabled = {%features.chaos%};
 var fiatEnabled = {%features.fiat%};
 var jobsEnabled = {%features.jobs%};
+var canaryEnabled = {%features.canary%};    
 var timezone = '{%timezone%}';
 var version = '{%version%}';
 var changelogGistId = '{%changelog.gist.id%}';
 var changelogGistName = '{%changelog.gist.name%}';
+
 var gce = {
   defaults: {
     account: '{%google.default.account%}',
@@ -118,6 +120,7 @@ window.spinnakerSettings = {
     entityTags: entityTagsEnabled,
     fiatEnabled: fiatEnabled,
     netflixMode: netflixMode,
+    canary: canaryEnabled,
     chaosMonkey: chaosEnabled,
     jobs: jobsEnabled,
     pipelines: true,
